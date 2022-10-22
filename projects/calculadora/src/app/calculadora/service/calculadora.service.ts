@@ -15,7 +15,6 @@ export class CalculadoraService {
   constructor() { }
 
   calcular(num1: number, num2: number, operacao: string) {
-
     let resultado: number;
 
     switch (operacao) {
