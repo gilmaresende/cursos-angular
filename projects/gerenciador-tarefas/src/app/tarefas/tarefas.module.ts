@@ -5,7 +5,8 @@ import { CommonModule } from '@angular/common';
 import { ListarTarefaComponent } from './listar';
 import { FormsModule } from '@angular/forms';
 import { CadastroTarefaComponent } from './cadastro';
-import { EditarTarefaComponent } from './editar-tarefa/editar-tarefa.component';
+import { EditarTarefaComponent } from './editar';
+import { TarefaConcluidaDirective } from './shared/tarefa-concluida.directive';
 
 
 
@@ -13,7 +14,8 @@ import { EditarTarefaComponent } from './editar-tarefa/editar-tarefa.component';
   declarations: [
     ListarTarefaComponent,
     CadastroTarefaComponent,
-    EditarTarefaComponent
+    EditarTarefaComponent,
+    TarefaConcluidaDirective
   ],
   imports: [
     CommonModule,
