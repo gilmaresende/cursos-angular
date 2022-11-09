@@ -11,3 +11,12 @@
 <button [disabled]="checkedDisabled">Btn</button>
 
 <img [src]="imgJava" [title]="imgTitle" [alt]="imgTitle" height="200px">
+
+<hr>
+
+
+<h2>Event Binding</h2>
+
+<button (click)="alertaInf($event)">Evento</button>
+{{position.x}} - {{position.y}}
+<div (mousemove)="mouseMoveTeste($event)" style="background-color: red; width: 300px; height:300px"></div>

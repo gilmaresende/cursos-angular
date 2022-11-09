@@ -13,6 +13,8 @@ export class DataBidingComponent implements OnInit {
   public idade: number = 29
   public maisUm: string = "Mais Um"
 
+  public position: { x: number, y: number } = { x: 0, y: 0 }
+
   constructor() { }
 
   public checkedDisabled: boolean = true;
@@ -20,6 +22,15 @@ export class DataBidingComponent implements OnInit {
   public imgTitle: string = "Java Logo"
 
   ngOnInit(): void {
+  }
+
+  public alertaInf(valor: MouseEvent): void {
+    console.log(valor)
+  }
+
+  public mouseMoveTeste(valor: MouseEvent): void {
+    this.position.x = valor.offsetX
+    this.position.y = valor.offsetY
   }
 
 }
