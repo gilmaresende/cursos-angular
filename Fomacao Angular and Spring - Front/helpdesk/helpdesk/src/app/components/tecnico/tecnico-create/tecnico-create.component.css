@@ -37,3 +37,7 @@ p {
    padding: 10px 0;
    opacity: .5;
 }
+
+mat-icon {
+   opacity: .8;
+}
