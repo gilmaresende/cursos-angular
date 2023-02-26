@@ -25,6 +25,7 @@ export class LoginComponent implements OnInit {
     private router: Router) { }
 
   ngOnInit(): void {
+    this.isLogado()
   }
 
   validaCampos(): boolean {
@@ -40,6 +41,13 @@ export class LoginComponent implements OnInit {
         this.toast.error("Usuário e/ou senha inválidos", 'Login')
       }
     })
+  }
+
+  isLogado() {
+    let authenticated = this.authService.isAuthenticated()
+    if (authenticated) {
+      this.router.navigate(['home'])
+    }
   }
 
 
