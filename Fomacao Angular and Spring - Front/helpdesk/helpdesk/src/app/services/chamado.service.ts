@@ -7,6 +7,6 @@ import { BaseService } from "./base.service";
 })
 export class ChamadoService extends BaseService<Chamado> {
 
-   rote: String = "clientes"
+   rote: String = "chamados"
 
 }
