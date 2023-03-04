@@ -1,5 +1,6 @@
-export interface Cliente {
-   id?: any;
+import { ModelBase } from "./modelbase";
+
+export interface Cliente extends ModelBase {
    nome: string;
    cpf: string;
    email: string;
