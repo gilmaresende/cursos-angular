@@ -8,6 +8,9 @@ import { Observable } from 'rxjs'
   providedIn: 'root'
 })
 export class TecnicoService {
+  delete(id: any): Observable<Tecnico> {
+    return this.http.delete<Tecnico>(`${API_CONFIG.baseURL}/tecnicos/${id}`);
+  }
 
   constructor(private http: HttpClient) { }
 
