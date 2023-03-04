@@ -1,3 +1,4 @@
+import { ChamadoListComponent } from './components/chamado/chamado-list/chamado-list.component';
 import { NavComponent } from './components/nav/nav.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -32,7 +33,8 @@ const routes: Routes = [
     { path: 'clientes/create', component: ClienteCreateComponent },
     { path: 'clientes/update/:id', component: ClienteUpdateComponent },
     { path: 'clientes/delete/:id', component: ClienteDeleteComponent },
-
+    // chamado
+    { path: 'chamados', component: ChamadoListComponent },
     ]
   }
 
