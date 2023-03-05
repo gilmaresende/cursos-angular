@@ -10,6 +10,6 @@ export interface Chamado extends ModelBase {
    tecnico: any;
    cliente: any;
    nomeCliente: string;
-   nomeTecnicno: string
+   nomeTecnico: string
 
 }
