@@ -15,6 +15,7 @@ import { MomentFormComponent } from './components/moment-form/moment-form.compon
 import { MessagesComponent } from './components/messages/messages.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MomentComponent } from './components/pages/moment/moment.component';
+import { EditMomentsComponent } from './components/edit-moments/edit-moments.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MomentComponent } from './components/pages/moment/moment.component';
     NewMomentComponent,
     MomentFormComponent,
     MessagesComponent,
-    MomentComponent
+    MomentComponent,
+    EditMomentsComponent
   ],
   imports: [
     AppRoutingModule,

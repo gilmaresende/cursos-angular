@@ -25,7 +25,6 @@ export class HomeComponent implements OnInit {
     this.momentsService.getMoments().subscribe((itens) => {
       const data = itens.data
       data.map(item => {
-        console.log(item)
         item.created_at = new Date(item.created_at!).toLocaleDateString('pt-BR')
       })
       this.allMoments = data
