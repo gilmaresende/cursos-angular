@@ -5,6 +5,6 @@ export interface Moment {
   image: string,
   created_at?: string,
   update_at?: string,
-  comment?: string,
+  comment?: [{ text: string; username: string }],
   username: string
 }
