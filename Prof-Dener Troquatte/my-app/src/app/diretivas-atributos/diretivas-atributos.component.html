@@ -1,0 +1,33 @@
+<!-- <p [ngClass]="{ active: valor, disabled: !valor }">NgClass</p>
+<p [ngStyle]="{ height: altura }" class="active">NgStyle</p> -->
+
+<ng-content select="h1"></ng-content>
+
+<hr />
+
+<input [(ngModel)]="nome" type="text" />{{ nome }}
+<button (click)="salvar()">Salvar</button>
+
+<li *ngFor="let item of list">{{ item.nome }}</li>
+
+<hr />
+<ng-template [ngIf]="true">
+  <p>true</p>
+</ng-template>
+<ng-template ngFor let-item [ngForOf]="list">
+  <p>{{ item.nome }}</p>
+</ng-template>
+
+<hr />
+
+conteudo meio
+
+<ng-content select="p"></ng-content>
+<hr />
+<h3>Pipes</h3>
+<input [(ngModel)]="nome" type="text" />{{ nome }}
+<button (click)="salvar()">Salvar</button>
+<ng-template ngFor let-item [ngForOf]="list">
+  <p>{{ item.nome | uppercase }}</p>
+</ng-template>
+{{ date | date : "dd/MM/yyyy" }}

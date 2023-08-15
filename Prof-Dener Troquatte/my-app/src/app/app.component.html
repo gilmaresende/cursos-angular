@@ -1,0 +1,24 @@
+<!-- <app-data-biding></app-data-biding> -->
+<!-- <app-diretivas-estruturais></app-diretivas-estruturais> -->
+
+<!-- <app-diretivas-atributos>
+  <h1>Aulas Diretiva Atributo</h1>
+  <p>Aulas Diretiva Atributo</p>
+</app-diretivas-atributos> -->
+
+<!-- <app-diretivas-atributos>
+  <h1>Aulas Diretiva Atributo lancamento 2</h1>
+  <p>Aulas Diretiva Atributo lancamento 2</p>
+</app-diretivas-atributos> -->
+
+<app-new-component></app-new-component>
+<app-input [contador]="addValue"></app-input>
+<button (click)="add()">Add</button>
+<hr />
+<ng-template [ngIf]="getDados">
+  <p>Nome: {{ getDados.nome }}</p>
+  <p>Idade: {{ getDados.idade }}</p>
+</ng-template>
+<app-output (enviarDados)="setDados($event)"></app-output>
+
+<router-outlet></router-outlet>
