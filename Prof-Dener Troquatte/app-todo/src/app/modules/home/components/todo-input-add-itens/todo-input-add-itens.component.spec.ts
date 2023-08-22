@@ -8,7 +8,7 @@ describe('TodoInputAddItensComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [TodoInputAddItensComponent]
+      declarations: [TodoInputAddItensComponent],
     });
     fixture = TestBed.createComponent(TodoInputAddItensComponent);
     component = fixture.componentInstance;
